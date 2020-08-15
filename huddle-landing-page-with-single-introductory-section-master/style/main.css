@@ -1,0 +1,237 @@
+:root {
+    /* Variáveis CSS*/
+    --color-background: #f8f8fcee; 
+    --color-primary-lighter: #9871F5;
+    --color-primary-light: #44268a;
+    --color-primary: hsl(257, 40%, 49%);
+    --color-primary-dark: #774DD6;
+    --color-primary-darker: #6842c2;
+    --color-secondary: #04D361;
+    --color-secondary-dark: #04BF58;
+    --color-title-in-primary: #FFFFFF;
+    --color-text-in-primary: #D4C2FF;
+    --color-text-title: #32264D;
+    --color-text-complement: #9C98A6;
+    --color-text-base: #6A6180;
+    --color-line-in-white: #E6E6F0;
+    --color-input-background: #F8F8FC;
+    --color-button-text: #FFFFFF;
+    --color-box-base: #FFFFFF;
+    --color-box-footer: #FAFAFC;
+    --color-small-info: #C1BCCC;
+    
+    /* Tamanho da fonte padrão: 16 px - 100% - 1rem */
+    font-size: 80%; /* controle das medidas rem */
+}
+
+#page-landing {
+    background-color: var(--color-primary);
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#page-landing .container .logo {
+    width: 33%;
+
+    margin-top: -100%;
+    margin-bottom: 90%;
+    margin-left: 11%;
+    margin-right: 11%;
+}
+
+#page-landing .container .mobile-background {
+    width: 100%;
+}
+
+#page-landing .container .desktop-background {
+    width: 0%;
+}
+
+#page-landing .container .primary-img {
+    width: 79%;
+    
+    margin-top: -100%;
+    margin-bottom: 13%;
+    margin-left: 11%;
+    margin-right: 11%;
+    
+}
+
+#page-landing .container h1 {
+    /* font-weight: 400; */
+    font-size: 2.2rem;
+    color: var(--color-line-in-white);
+
+    text-align: center;
+
+    margin-top: -2%;
+    /* margin-bottom: 3%; */
+    margin-left: 1%;
+    /* margin-right: 1%; */
+    
+}
+
+#page-landing .container p {
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    line-height: 2.2rem; 
+    color: var(--color-line-in-white);
+
+    text-align: center;
+
+    padding: 0 2rem;
+
+}
+
+#page-landing .container button {
+    background-color: var(--color-line-in-white);
+    border: 0;
+    border-radius: 20rem;
+    width: 17rem;
+    height: 3.5rem;
+
+    font-weight: 400; 
+    margin-left: 6rem;
+    margin-top: -1rem;
+
+    color: #8257E9;
+    cursor: pointer;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+
+    text-decoration: none;
+    transition: var(--color-background) 0.2s;
+}
+
+#page-landing .container button:hover {
+    background-color: var(--color-text-complement);
+}
+
+#page-landing .container .facebook-icon {
+    /* width: 3rem; */
+    position: absolute;
+    bottom: 30px;
+    left: 9rem;
+}
+
+#page-landing .container .instagram-icon {
+    /* width: 4rem; */
+    position: absolute;
+    bottom: 30px;
+    left: 13.3rem;
+}
+
+#page-landing .container .twitter-icon {
+    position: absolute;
+    bottom: 30px;
+    left: 17.8rem;
+}
+
+@media (min-width: 700px) {
+    :root {
+        font-size: 62.5%; /* Todo 1rem vai ser relativo a 10px (16 => 100%) */
+    }
+    
+    #page-landing .container .mobile-background {
+        width: 0%;
+    }
+    
+    #page-landing .container .desktop-background {
+        width: 92%;
+        /* height: 150%; */
+        /* background-size: 1440px; */
+    }
+
+    #page-landing .container .primary-img {
+        width: 54%;
+        
+        margin-bottom: 6%;
+        margin-left: 4%;
+        
+    }
+
+    #page-landing .container .logo {
+        width: 15%;
+        margin-bottom: 50%;
+        margin-left: 3.8%;
+        margin-right: 50%;
+    }
+    
+    #page-landing .container h1 {
+        /* font-weight: 400; */
+        font-size: 4.4rem;
+        color: var(--color-line-in-white);
+        text-align: left;
+
+        position: absolute;
+        left: 62%;
+        top: 31.5%;
+
+    }
+
+    #page-landing .container p {
+        font-family: sans-serif;
+        font-size: 1.8rem;
+        line-height: 2.2rem; 
+        color: var(--color-line-in-white);
+    
+        text-align: left;
+
+        position: absolute;
+        left: 61.6%;
+        top: 41.50%;
+    
+    }
+
+    #page-landing .container button {
+        border: 2rem black;
+        border-radius: 3rem;
+        
+        width: 18rem;
+        height: 5rem;
+    
+        margin-left: 90rem;
+        margin-top: -39rem;
+    
+        color: #8257E9;
+        cursor: pointer;
+       
+        display: flex;
+        align-items: center;
+        justify-content: center ;
+    
+        text-decoration: none;
+        transition: var(--color-background) 0.2s;
+    }
+
+    #page-landing .container button:hover {
+        background-color: var(--color-text-complement);
+    }
+
+    #page-landing .container .facebook-icon {
+        /* width: 3rem; */
+        position: absolute;
+        bottom: 30px;
+        left: 120rem;
+    }
+    
+    #page-landing .container .instagram-icon {
+        /* width: 4rem; */
+        position: absolute;
+        bottom: 30px;
+        left: 125rem;
+    }
+    
+    #page-landing .container .twitter-icon {
+        position: absolute;
+        bottom: 30px;
+        left: 130rem;
+    }
+    
+}
+
